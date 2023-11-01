@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cyl-jsl.github.io/ryokyu/",
   "devDependencies": {
     "eslint": "^8.40.0",
     "eslint-config-prettier": "^8.8.0",
@@ -32,6 +33,7 @@
     "eslint-config-next": "13.4.2",
     "firebase": "^10.4.0",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^6.0.0",
     "immutable": "^5.0.0-beta.4",
     "jwt-decode": "^3.1.2",
     "lodash": "^4.17.21",
@@ -68,7 +70,9 @@
     "dev": "next dev",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
